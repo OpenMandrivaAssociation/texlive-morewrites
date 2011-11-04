@@ -1,3 +1,9 @@
+# revision 23923
+# category Package
+# catalog-ctan /macros/latex/contrib/morewrites
+# catalog-date 2011-09-10 11:16:55 +0200
+# catalog-license lppl1.3
+# catalog-version 0.1
 Name:		texlive-morewrites
 Version:	0.1
 Release:	1
@@ -49,6 +55,7 @@ l3kernel bundle.
 #- source
 %doc %{_texmfdistdir}/source/latex/morewrites/morewrites.dtx
 %doc %{_texmfdistdir}/source/latex/morewrites/morewrites.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,3 +66,5 @@ l3kernel bundle.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
