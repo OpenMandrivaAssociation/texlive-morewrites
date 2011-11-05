@@ -16,7 +16,8 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/morewrites.doc.ta
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/morewrites.source.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
+Requires(pre):	texlive-tlpkg
+Requires(post):	texlive-kpathsea
 Conflicts:	texlive-texmf <= 20110705-3
 Conflicts:	texlive-doc <= 20110705-3
 Conflicts:	texlive-source <= 20110705-3
