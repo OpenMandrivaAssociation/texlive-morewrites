@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-morewrites
 Version:	0.1
-Release:	1
+Release:	2
 Summary:	Always room for a new write stream
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/morewrites
