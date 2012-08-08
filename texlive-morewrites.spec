@@ -1,12 +1,12 @@
-# revision 23923
+# revision 27138
 # category Package
 # catalog-ctan /macros/latex/contrib/morewrites
-# catalog-date 2011-09-10 11:16:55 +0200
+# catalog-date 2012-07-16 14:57:58 +0200
 # catalog-license lppl1.3
-# catalog-version 0.1
+# catalog-version 0.2
 Name:		texlive-morewrites
-Version:	0.1
-Release:	2
+Version:	0.2
+Release:	1
 Summary:	Always room for a new write stream
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/morewrites
@@ -40,11 +40,14 @@ l3kernel bundle.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/tex/latex/morewrites/morewrites.sty
+%{_texmfdistdir}/tex/latex/morewrites/primargs.sty
 %doc %{_texmfdistdir}/doc/latex/morewrites/README
 %doc %{_texmfdistdir}/doc/latex/morewrites/morewrites.pdf
+%doc %{_texmfdistdir}/doc/latex/morewrites/primargs.pdf
 #- source
 %doc %{_texmfdistdir}/source/latex/morewrites/morewrites.dtx
 %doc %{_texmfdistdir}/source/latex/morewrites/morewrites.ins
+%doc %{_texmfdistdir}/source/latex/morewrites/primargs.dtx
 
 #-----------------------------------------------------------------------
 %prep
