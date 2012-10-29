@@ -1,11 +1,11 @@
-# revision 27138
+# revision 27516
 # category Package
 # catalog-ctan /macros/latex/contrib/morewrites
-# catalog-date 2012-07-16 14:57:58 +0200
+# catalog-date 2012-08-24 11:37:59 +0200
 # catalog-license lppl1.3
-# catalog-version 0.2
+# catalog-version 0.2c
 Name:		texlive-morewrites
-Version:	0.2
+Version:	0.2c
 Release:	1
 Summary:	Always room for a new write stream
 Group:		Publishing
