@@ -1,11 +1,11 @@
-# revision 27516
+# revision 28767
 # category Package
 # catalog-ctan /macros/latex/contrib/morewrites
-# catalog-date 2012-08-24 11:37:59 +0200
+# catalog-date 2013-01-08 14:50:28 +0100
 # catalog-license lppl1.3
-# catalog-version 0.2c
+# catalog-version 0.2e
 Name:		texlive-morewrites
-Version:	0.2c
+Version:	0.2e
 Release:	1
 Summary:	Always room for a new write stream
 Group:		Publishing
@@ -23,11 +23,11 @@ Requires(post):	texlive-kpathsea
 The package aims to solve the error "No room for a new \write",
 which occurs when the user, or when the user's packages have
 'allocated too many streams using \newwrite (TeX has a fixed
-number - 16 - such streams built-in to its code). The package
-hooks into TeX primitive commands associated with writing to
-files; it should be loaded near the beginning of the sequence
-of loading packages for a document. The package uses the
-l3kernel bundle.
+maximum number - 16 - such streams built-in to its code). The
+package hooks into TeX primitive commands associated with
+writing to files; it should be loaded near the beginning of the
+sequence of loading packages for a document. The package uses
+the l3kernel bundle.
 
 %post
     %{_sbindir}/texlive.post
