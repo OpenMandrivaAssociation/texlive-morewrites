@@ -1,6 +1,6 @@
 Name:		texlive-morewrites
-Version:	20180406
-Release:	3
+Version:	20181230
+Release:	1
 Summary:	Always room for a new write stream
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/morewrites
