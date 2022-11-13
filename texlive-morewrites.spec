@@ -1,13 +1,13 @@
 Name:		texlive-morewrites
-Version:	20190228
+Version:	49531
 Release:	1
 Summary:	Always room for a new write stream
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/morewrites
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/morewrites.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/morewrites.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/morewrites.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/morewrites.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/morewrites.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/morewrites.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +24,12 @@ sequence of loading packages for a document. The package uses
 the l3kernel bundle.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -40,7 +40,8 @@ the l3kernel bundle.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
