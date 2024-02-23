@@ -1,5 +1,5 @@
 Name:		texlive-morewrites
-Version:	69306
+Version:	69679
 Release:	1
 Summary:	Always room for a new write stream
 Group:		Publishing
