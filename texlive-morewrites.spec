@@ -3,7 +3,7 @@ Version:	69679
 Release:	1
 Summary:	Always room for a new write stream
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/morewrites
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/morewrites
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/morewrites.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/morewrites.doc.r%{version}.tar.xz
